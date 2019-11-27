@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>What why and how of this software development platform</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luigi Cesarini" />
+    <link href="github_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="github_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="github_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ppt.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# What why and how of this software development platform
+### Luigi Cesarini
+### 27/11/2019
+
+---
+
+
+
+
+
+# Agenda
+
+- &lt;p style="font-size:30px;"&gt;General Overview of GitHub&lt;/p&gt; 
+  
++ &lt;p style="font-size:30px;"&gt;Main component of the platform&lt;/p&gt;  
+  
++ &lt;p style="font-size:30px;"&gt;What can WE do with this tools&lt;/p&gt;  
+  
+- &lt;p style="font-size:30px;"&gt;Little extras provided by GitHub&lt;/p&gt;
+
+
+---
+
+# Overview
+## What is it?
+  
+&lt;p style="font-size:30px;text-align:center;line-height:2em;font-style:italic;"&gt; 
+"GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere" 
+&lt;/style&gt;
+  
+--
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;p style="font-size:30px;text-align:center;color:red;font-weight:bold;"&gt; 
+Created for developers
+&lt;/p&gt;
+
+---
+
+# Overview
+
+- It is used by several company (Spotify, Paypal, Rstudio, Tensorflow, ...)
+- Allows _Source Control_ (more on it later)
+- Can be used either on local machine or in the clouds ☁️
+- Peer-review of your code/project
+- Foster open-source development
+- Track changes in your code across versions
+- Visibility of your projects
+
+
+---
+
+#Source Control
+  
+&lt;br&gt;  
+Collaborating with other people requires sharing of data, scripts of coding etc.  
+&lt;br&gt;
+Problems that often come up:
+&lt;br&gt;
+
+* **Overwriting and deleting others work**
+* **Overlapping: working at the same time on the same file**
+
+GitHub solves this problems by tracking every change made by any user on the file.  
+&lt;br&gt;
+GitHub keeps a version history of your code so that previous versions are not lost with every iteration.
+
+
+
+
+---
+
+# Main components of the platform
+## Grammar of GitHub
+&lt;font size = "6" color = "blue" &gt;
+.pull-left[  
+* Repositories   
+* Branches  
+* Commit  
+* Pull
+]
+.pull-right[
+* Push
+* Merge Conflict
+* Fork 
+* Issues 
+]
+&lt;/font&gt;
+
+---
+# Repositories
+
+&lt;br&gt;
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs.  
+&lt;br&gt;
+&lt;br&gt;
+There are two kind of repositories:
+- **Public**
+- **Private** for only few 💴
+
+How to create a repository ?
+
+---
+# Branches
+&lt;br&gt;
+Branching is the way to work on different versions of a repository at one time.
+
+By default your repository has one branch named master which is considered to be the definitive branch. We use branches to experiment and make edits before committing them to master.
+
+When you create a branch off the master branch, you’re making a copy, or snapshot, of master as it was at that point in time. If someone else made changes to the master branch while you were working on your branch, you could pull in those updates. 
+
+
+&lt;img src="https://guides.github.com/activities/hello-world/branching.png" alt="How branching works"&gt;
+Source: [GitHub help](https://guides.github.com/activities/hello-world/)
+
+
+
+
+---
+# Commit and Push
+&lt;br&gt;
+**Commit**  
+
+On GitHub commits are saved changes. To each commit is associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you’ve done and why.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+**Push**  
+  
+It is the virtual actions of putting the changes you have made (committed) to a remote repository, hosted on GitHub. For instance, if you change something locally, you'd want to then push those changes so that others may access them.
+
+
+---
+# Pull &amp; Pull Request
+
+.pull-left[
+**Pull** refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date.  
+  
+**Pull requests** let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.]
+
+.pull-right[
+&lt;img src="https://images.osteele.com/2008/git-workflow.png" ref="How branching works" height="500" float = "right"&gt;
+&lt;p style="font-size:16px;"&gt;Image courtesy of [Oliver Steele](https://blog.osteele.com/2008/05/my-git-workflow/)
+]
+
+---
+# Merge Conflict
+&lt;br&gt;
+A conflict comes up when 2 different user make changes in the same points of a file or a script.  
+  
+Github identify this conflicts and flag this problem to the users.  
+  
+_"Merging"_ the conflict is the way to solve the problem encountered.  
+
+Theoretically anybody can merge the conflicts but it is usually left to the person in charge of the project.  
+
+  
+__Good communication__ and knowing which person is working which task could avoid this merging procedure which might still be troublesome
+
+
+---
+# Fork
+&lt;br&gt;
+
+A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original. Forks remain attached to the original, allowing you to submit a pull request to the original's author to update with your changes. You can also keep your fork up to date by pulling in updates from the original.  
+&lt;br&gt;
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+---
+# Issue
+&lt;br&gt;
+  
+  
+Issues are suggested improvements, tasks or questions related to the repository. Issues can be created by anyone (for public repositories), and are moderated by repository collaborators. Each issue contains its own discussion forum, can be labeled and assigned to a user.  
+  
+- It is a direct connection with the creator of the project  
+- Exploit a community of expert to solve issues
+
+
+---
+# OUR way to exploit GitHub
+
+- Enhance the collaboration with colleagues from other institutes and other countries
+- Install packages with devtools that are yet to be accepted on CRAN (in R)  
+- Finding materials and source code that could help us in developing new tools
+- Dissemination to a broader audience
+- Personal Projects
+
+
+Most of the coding used to develop packages for R or modules for Python are stored on GitHub and usually freely available (under TOS)
+
+--
+
+&lt;font size = "7" color= "red"&gt; &lt;p style="text-align:center;line-height:2.5;"&gt;STEALING &lt;/font&gt;
+
+---
+
+# Little nuggets
+
+* Github pages
+ + Tranforms your repository into a website
+* Git 
+* GitHub Desktop
+
+---
+
+#References
+
+At this [link](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-ghPagesSetup.md) you may find a step-by-step guide on how to create your website from a repository in around 5 minutes top.  
+  
+I've taken most of the definition from the [help](https://help.github.com/) section of GitHub   
+  
+I'm gonna update the references as soon as possible. Baby step
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

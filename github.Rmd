@@ -1,0 +1,221 @@
+---
+title: "What why and how of this software development platform" 
+author: "Luigi Cesarini"
+date: "27/11/2019"
+output:
+  xaringan::moon_reader:
+    css: [default,metropolis, metropolis-fonts,"ppt.css"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = TRUE, message = FALSE, comment = NA, dpi = 450)
+
+```
+
+
+# Agenda
+
+- <p style="font-size:30px;">General Overview of GitHub</p> 
+  
++ <p style="font-size:30px;">Main component of the platform</p>  
+  
++ <p style="font-size:30px;">What can WE do with this tools</p>  
+  
+- <p style="font-size:30px;">Little extras provided by GitHub</p>
+
+
+---
+
+# Overview
+## What is it?
+  
+<p style="font-size:30px;text-align:center;line-height:2em;font-style:italic;"> 
+"GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere" 
+</style>
+  
+--
+
+<br>
+<br>
+
+<p style="font-size:30px;text-align:center;color:red;font-weight:bold;"> 
+Created for developers
+</p>
+
+---
+
+# Overview
+
+- It is used by several company (Spotify, Paypal, Rstudio, Tensorflow, ...)
+- Allows _Source Control_ (more on it later)
+- Can be used either on local machine or in the clouds `r emo::ji("cloud")`
+- Peer-review of your code/project
+- Foster open-source development
+- Track changes in your code across versions
+- Visibility of your projects
+
+
+---
+
+#Source Control
+  
+<br>  
+Collaborating with other people requires sharing of data, scripts of coding etc.  
+<br>
+Problems that often come up:
+<br>
+
+* **Overwriting and deleting others work**
+* **Overlapping: working at the same time on the same file**
+
+GitHub solves this problems by tracking every change made by any user on the file.  
+<br>
+GitHub keeps a version history of your code so that previous versions are not lost with every iteration.
+
+
+
+
+---
+
+# Main components of the platform
+## Grammar of GitHub
+<font size = "6" color = "blue" >
+.pull-left[  
+* Repositories   
+* Branches  
+* Commit  
+* Pull
+]
+.pull-right[
+* Push
+* Merge Conflict
+* Fork 
+* Issues 
+]
+</font>
+
+---
+# Repositories
+
+<br>
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs.  
+<br>
+<br>
+There are two kind of repositories:
+- **Public**
+- **Private** for only few `r emo::ji("money")`
+
+How to create a repository ?
+
+---
+# Branches
+<br>
+Branching is the way to work on different versions of a repository at one time.
+
+By default your repository has one branch named master which is considered to be the definitive branch. We use branches to experiment and make edits before committing them to master.
+
+When you create a branch off the master branch, you’re making a copy, or snapshot, of master as it was at that point in time. If someone else made changes to the master branch while you were working on your branch, you could pull in those updates. 
+
+
+<img src="https://guides.github.com/activities/hello-world/branching.png" alt="How branching works">
+Source: [GitHub help](https://guides.github.com/activities/hello-world/)
+
+
+
+
+---
+# Commit and Push
+<br>
+**Commit**  
+
+On GitHub commits are saved changes. To each commit is associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you’ve done and why.
+<br>
+<br>
+<br>
+<br>
+**Push**  
+  
+It is the virtual actions of putting the changes you have made (committed) to a remote repository, hosted on GitHub. For instance, if you change something locally, you'd want to then push those changes so that others may access them.
+
+
+---
+# Pull & Pull Request
+
+.pull-left[
+**Pull** refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date.  
+  
+**Pull requests** let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.]
+
+.pull-right[
+<img src="https://images.osteele.com/2008/git-workflow.png" ref="How branching works" height="500" float = "right">
+<p style="font-size:16px;">Image courtesy of [Oliver Steele](https://blog.osteele.com/2008/05/my-git-workflow/)
+]
+
+---
+# Merge Conflict
+<br>
+A conflict comes up when 2 different user make changes in the same points of a file or a script.  
+  
+Github identify this conflicts and flag this problem to the users.  
+  
+_"Merging"_ the conflict is the way to solve the problem encountered.  
+
+Theoretically anybody can merge the conflicts but it is usually left to the person in charge of the project.  
+
+  
+__Good communication__ and knowing which person is working which task could avoid this merging procedure which might still be troublesome
+
+
+---
+# Fork
+<br>
+
+A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original. Forks remain attached to the original, allowing you to submit a pull request to the original's author to update with your changes. You can also keep your fork up to date by pulling in updates from the original.  
+<br>
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+---
+# Issue
+<br>
+  
+  
+Issues are suggested improvements, tasks or questions related to the repository. Issues can be created by anyone (for public repositories), and are moderated by repository collaborators. Each issue contains its own discussion forum, can be labeled and assigned to a user.  
+  
+- It is a direct connection with the creator of the project  
+- Exploit a community of expert to solve issues
+
+
+---
+# OUR way to exploit GitHub
+
+- Enhance the collaboration with colleagues from other institutes and other countries
+- Install packages with devtools that are yet to be accepted on CRAN (in R)  
+- Finding materials and source code that could help us in developing new tools
+- Dissemination to a broader audience
+- Personal Projects
+
+
+Most of the coding used to develop packages for R or modules for Python are stored on GitHub and usually freely available (under TOS)
+
+--
+
+<font size = "7" color= "red"> <p style="text-align:center;line-height:2.5;">STEALING </font>
+
+---
+
+# Little nuggets
+
+* Github pages
+ + Tranforms your repository into a website
+* Git 
+* GitHub Desktop
+
+---
+
+#References
+
+At this [link](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-ghPagesSetup.md) you may find a step-by-step guide on how to create your website from a repository in around 5 minutes top.  
+  
+I've taken most of the definition from the [help](https://help.github.com/) section of GitHub   
+  
+I'm gonna update the references as soon as possible. Baby step
